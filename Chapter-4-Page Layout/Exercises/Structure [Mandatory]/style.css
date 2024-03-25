@@ -1,0 +1,139 @@
+* {    /* applies to everything */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+body {
+
+    /* default font for all contents of webpage, unless overwritten */
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* Styles for header tag */
+header {
+    background-color: #17072b;
+    padding-top: 1.5em;
+}
+
+/* Style for logo [h1 tag] */
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 700;
+    border-bottom-style: solid;
+    padding-bottom: 0.05px;
+    border-bottom-width: 3.5px;
+    width: fit-content;
+}
+
+h2 {
+    font-family: "Tahoma", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Styles for navigation bar */
+.navigation {
+    padding-top: 20px;
+    padding-bottom: 16px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a {
+    padding: 0 17px;
+    font-size: 21px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Welcome Section */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* sets up two columns for website's content */
+main .welcome {
+    display: flex;
+    flex-direction: column;
+    flex: 0.88;
+    margin: 28px 28px 0 30px;
+}
+
+/* targets welcome heading */
+.welcome h2 {
+    border-bottom-style: solid;
+    padding-bottom: 0.1px;
+    border-bottom-width: 3px;
+    width: fit-content;
+}
+
+.welcome p {
+    margin-top: 16px; 
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.welcome img {
+    width: 720px;
+}
+    
+main .line-up {
+    background-color: #172D67;
+    color: #FFFFFF;
+    padding: 24px 32px 24px 32px;
+    margin: 10px 0 0 10px;
+}
+
+.line-up h2 {
+    border-bottom-style: solid;
+    padding-bottom: 0.1px;
+    border-bottom-width: 2px;
+    width: fit-content;
+}
+
+.line-up p {
+    font-size: 18px;
+    margin-top: 16px; 
+    margin-bottom: 16px;
+}
+
+.line-up .images {
+    margin-top: 3.4em;
+}
+
+/*  */
+.images img {
+    width: 200px;
+    height: 200px;
+}
+
+/* space between images in line-up section */
+.images .one {
+    margin-right: 6px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #8c15e9;
+    padding: 6px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+footer p {
+    overflow: hidden;
+    margin: 0;
+}
