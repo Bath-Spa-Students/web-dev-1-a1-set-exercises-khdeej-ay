@@ -1,0 +1,33 @@
+/* targets the first div */
+.a {
+    border: 5px solid #7300ff;
+
+    /* values order: horizontal-offset vertical-offset blur-radius spread-radius(optional) color */
+    box-shadow: 10px 10px 10px 0px #ff0000;
+}
+
+/* targets the second div */
+.b {
+    border: 5px solid #00ff00;
+    
+    /* values order: horizontal-offset vertical-offset blur-radius spread-radius(optional) color */
+    box-shadow: 10px 10px 10px 0px #000000 inset;
+}
+
+/* targets the third div */
+.c {
+    border: 5px solid #f7990c;
+    border-radius: 24px;
+
+    /* values order: horizontal-offset vertical-offset blur-radius spread-radius(optional) color */
+    /* to set multiple box shadows, separate each by a comma */
+    box-shadow: 
+        0 0 0 10px blue, 
+        0 0 0 20px red, 
+        0 0 0 30px green;
+}
+
+/* targets the fourth div */
+.d {
+    border: 5px solid #b30000;
+}
