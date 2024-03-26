@@ -1,0 +1,465 @@
+* {    /* applies to everything */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+body {    /* applies to everything in body tags */
+    background-color: #FEF5ED;
+
+    /* default font for all contents of webpage, unless overwritten */
+    font-family: "Raleway", sans-serif;
+
+    /* prevents white space under footer */
+    height: 100vh;    /* vh - viewport height */
+
+    /* sets default text color */
+    color: #0C090D;
+}
+
+/* STYLING THE MAIN */
+.main {
+    /* limits content to 85% of a screen only */
+    width: 85%; 
+    
+    /* setting both margin left and right to auto ensures everything is horizontally centered*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, section {    /* applies styles to header and all sections */
+
+    /* width will take up 100% of parent element's width */
+    width: 100%;
+
+    /* sets a top margin before each sections */
+    margin-top: 2em; 
+}
+
+/* STYLING THE NAVIGATION BAR */
+.nav-bar {    
+    width: 100%;
+
+    /* sets the display to flex to ensure it adapts to different screens */
+    display: flex;
+}
+
+.nav-bar nav {
+    /* hides content that spills out of parent container */
+    overflow: hidden;
+
+    /* aligns navbar to the left */
+    margin-left: auto;
+}
+
+.nav-bar nav a {    /* styles for navigation links */
+
+    /* sets display to inline-block to adjust the height and width of child elements */
+    display: inline-block;
+    padding: 18px 24px; 
+    color: #0C090D;
+
+    /* removes the default link styles */
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {    /* hover style for navigation links */
+    background-color: #D3E4CD;
+    color: #404040 ;
+}
+
+/* styles targetting the logo */
+.nav-bar nav img {
+
+    /* sets position of logo to absolute - so it is positioned relative to the nearest positioned ancestor */
+    position: absolute;
+
+    /* sets horizontal position of a positioned element */
+    left: 0;
+
+    /* sets the vertical position of a positioned element */
+    top: 0;
+
+    /* width of logo */
+    width: 240px;
+
+    /* adjusts vertical position of logo */
+    margin-top: -2.7em;
+
+    /* sets the vertical position of logo */
+    margin-left: 3.6em;
+}
+
+/* STYLING THE LANDING PAGE */
+.landing-page, 
+.container {
+    /* sets landing-page height */
+    height: 430px;
+}
+
+/* targets parent element of 2 column elements */
+.container {
+
+    /* sets display to flex to make columns responsive */
+    display: flex;
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+}
+
+/* targets the left column */
+.container .left {
+    margin-right: 6em;
+}
+
+/* styles for the tagline (h1) */
+.tagline {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* styles for description */
+.description {
+    font-size: 18px;
+}
+
+/* targets the catchphrase */
+.description p strong em {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* targets the right column */
+.container .right {
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/* Styling for Timings and Serving Info Section */
+.icons {
+
+    /* places stats on top - z-index property controls the stacking order of overlapping elements */
+    z-index: 1;
+
+    /* sets display to flex to make stats responsive */
+    display: flex;
+
+    /* Aligns flex items along the main axis (x) of flex container. */
+    justify-content: center;
+    text-align: center;
+    
+    /* sets position of logo to absolute - so it is positioned relative to the nearest positioned ancestor */
+    position: absolute;
+
+    /* sets the vertical position of a positioned element */
+    bottom: 75px;
+
+    /* sets the horizontal position of a positioned element */
+    right: 205px; 
+}
+
+/* targets each stat box */
+.icons div {
+    border: 1px solid #404040;
+    border-radius: 12px;
+    padding: 6px;
+    margin: 2px;
+    width: 100px;
+    background-color: #D3E4CD;
+    color: #404040;
+}
+
+/* targets stat text */
+.icons div p {
+    margin-top: 2px;
+}
+
+/* targets some hr separator elements */
+.icons div hr, 
+.instructions hr {
+    display: block;
+
+    /* height of underline */
+    height: 1px;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 1px solid #404040;
+    margin: 2px 0;
+    padding: 0;
+}
+
+/* targets stats icons */
+.image img {
+
+    /* places img on bottom - less z-index property places elements behind */
+    z-index: 0;
+
+    /* fixes width for stats */
+    width: 500px;
+    border-radius: 2.4em;
+    border: 5px solid #ADC2A9;
+}
+
+/* STYLE FOR ALL H2 HEADINGS */
+div h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+/* STYLING THE INGREDIENTS & INSTRUCTIONS CARD */
+.ingredients-instructions {
+
+    /* sets display to flex to make columns responsive */
+    display: flex; 
+    padding-top: 1.5em; 
+    padding-bottom: 1em;
+}
+
+/* STYLING THE INGREDIENTS COLUMN */
+#ingredients {
+
+    /* sets width for ingredients column */
+    flex: 40%;
+    margin-right: 3em;
+}
+
+#ingredients .ingredients {
+
+    /* sets display to flex to make ingredients column responsive */
+    display: flex;
+    width: 100%;
+
+    /* sets flow direction of elements to column (default is row) */
+    flex-direction: column;
+
+    /* sets padding: top right bottom left */
+    padding: 1em 1em 1em 2em;
+    background-color: #869a86;
+    color: #FEF5ED;
+}
+
+/* Overwrites ingredients heading styles */
+.ingredients h2 {
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+/* targets ingredients separator line */
+.ingredients hr {
+    display: block;
+
+    /* height of underline */
+    height: 1px;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 1px solid #FEF5ED;
+    margin: 2px 0;
+    padding: 0;
+}
+
+/* targets ingredients list */
+.ingredients ul {
+    padding-top: 10px;
+}
+
+/* targets ingredients list items */
+.ingredients li {
+    padding: 2.5px;
+}
+
+/* STYLING THE INSTRUCTIONS COLUMN */
+#instructions .instructions {
+    padding: 1em 1em 1em 2em;
+    background-color: #D3E4CD;
+    color: #404040;
+}
+
+/* Overwrites instructions heading styles */
+.instructions h2 {
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+/* targets instructions list */
+.instructions ol {
+    padding-top: 10px;
+}
+
+/* targets instructions list items */
+.instructions ol li {
+    padding: 2.5px;
+}
+
+/* STYLING THE TIPS SECTION */
+#tips {
+    padding-top: 2em;
+}
+
+/* targets separating line between sections */
+.main .separator {
+    margin-top: 2em;
+}
+
+/* targets tips section heading */
+.tips h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* targets tips container box */
+.tips-container {
+
+    /* sets display to flex to make ingredients layout responsive */
+    display: flex;
+}
+
+/* targets each tip separately */
+.tips-container div {
+
+    /* sets width of each tip as equal */
+    flex: 1;
+    text-align: center;
+    color: #505050;
+    border: 3px solid #ADC2A9;
+    border-radius: 16px;
+    padding: 14px 20px;
+    margin: 10px;
+}
+
+/* targets the hover state of each tip */
+.tips-container div:hover {
+    color: #000000;
+    
+    /* box-shadow: x(y-visible), y(x-visible), blur, spread, color, inset/outset(default) */
+    box-shadow: 2px 2px 5px 1px #D3E4CD;
+}
+
+/* targets the image icon in the tips */
+.tips-container div img {
+    width: 48px;
+}
+
+/* targets the separator inside each tip */
+.tips-container div hr {
+    display: block;
+    
+    /* height of underline */
+    height: 1px;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 1px solid #ADC2A9;
+    margin: 7px 0;
+    padding: 0;
+}
+
+/* STYLING THE NUTRITIONAL INFORMATION SECTION */
+#nutrition {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+/* targets nutrition heading */
+.nutrition div h2 {
+    text-align: center;
+}
+
+/* targets subheading */
+.nutrition div p {
+    margin: 6px auto 18px auto;
+    text-align: center;
+}
+
+/* targets table */
+.nutrition table {
+
+    /* removes table borders */
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* targets table body */
+tbody {
+
+    /* sets table's outer border */
+    border: 2px solid #ADC2A9;
+} 
+
+/* targets table rows */
+tr {
+
+    /* sets border between rows */
+    border: 1px solid #ADC2A9;
+}
+
+/* targets 2 column table cells */
+.middle {
+
+    /* sets border between columns (middle line) */
+    border-left: 1px solid #ADC2A9;
+}
+
+/* targets table cells */
+.nutrition table td {
+    padding: 10px 18px;
+}
+
+/* targets table cell with class bold */
+.bold {
+    font-weight: 700;
+}
+
+/* targets cells with pre tag */
+pre {
+    font-family: "Raleway", sans-serif;
+}
+
+/* targets hover state of each table cell */
+tr td:hover {
+    background-color: #D3E4CD;
+}
+
+/* STYLING THE FOOTER */
+footer {
+
+    /* takes up full width of parent element (ie body)*/
+    width: 100%;    
+    color: #0C090D;
+    text-align: center;
+    font-size: 14px;
+    background-color: #ADC2A9;
+    padding: 10px;
+}
+
+/* targets footer content */
+footer  p {
+
+    /* hides content that spills out of parent container */
+    overflow: hidden;
+    margin: 0;
+}
+
+/* targets link in footer */
+footer a {
+    font-size: 14px;
+    color: #0C090D;
+    font-style: italic;
+
+    /* removes default link styles */
+    text-decoration: none;
+}
+
+/* targets hover state of link in footer */
+footer a:hover {
+    color: #504f4f;
+}
