@@ -1,0 +1,61 @@
+* {    /* applies to everything */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fffbca;
+    color: #344f63;
+
+    /* font for all contents of webpage */
+    font-family: "Nanum Gothic Coding", monospace;
+
+    /* prevents white space under footer */
+    height: 100vh;    /* vh - viewport height */
+
+    /* prevents page from scrolling */
+    overflow: hidden;
+}
+
+/* targets the video container */
+.container {
+    height: 83vh;  /* sets viewport height */
+}
+
+/* targets the video tag */
+video {
+
+    /* sets a width for the video */
+    width: 640px;
+
+    /* position is set to absolute */
+    position: absolute;
+
+    /* distance between the top of the video and the top of the container to 50% */
+    top: 50%;
+
+    /* distance between the left of the video and the left of the container to 50% */
+    left: 50%;
+
+    /* video will be moved left by 50% of its own width and up by 50% of its own height */
+    transform: translate(-50%, -50%);
+
+    /* sets a border around the video */
+    border: 6px solid #344f63;
+    border-radius: 16px;
+}
+
+/* targets the credits */
+.credits {
+    text-align: center;
+}
+
+/* targets the credits links */
+.credits p a {
+    color: #3c4e67;
+}
+
+/* targets the hover state of the links */
+.credits p a:hover {
+    color: #8597b0;
+}
