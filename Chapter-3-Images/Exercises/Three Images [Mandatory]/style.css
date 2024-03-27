@@ -1,0 +1,143 @@
+* {    /* applies to everything */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {    /* applies to everything in body tags */
+    background-color: #fddb9a;    /*background image */
+    color: #404040;    /* text color */
+    font-family: "Nanum Gothic Coding", monospace;    /* font */
+
+    /* limits content to 85% of a screen only */
+    width: 80%; 
+
+    /* prevents white space under footer */
+    height: 100vh;   /* vh - viewport height */
+
+    /* setting both margin left and right to auto ensures everything is horizontally centered*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* targets the title card */
+.title {
+    background-color: #876445; 
+    color: #F4DFBA;
+    padding: 16px;
+}
+
+/* targets the theme heading */
+h1 {
+    padding-bottom: 8px;
+    font-size: 36px;
+}
+
+/* targets the subheading */
+h3 {
+    font-size: 20px;
+}
+
+/* targets the header, sections and footer tags to add space between them */
+header, 
+section, 
+footer {
+    margin-top: 2em;
+}
+
+/* targets the image titles */
+h2 {
+    background-color: #CA965C;
+    padding: 12px;
+}
+
+/* targets the original and filter images container */
+.comparison {
+
+    /* sets the display to flex to ensure it adapts to different screens */
+    display: flex;
+
+    /* Aligns flex items along the main axis (x) of flex container. */
+    justify-content: center;
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+    background-color: #F4DFBA;
+    padding: 24px;
+}
+
+/* targets the original images */
+.original {
+    margin-right: 18px;
+}
+
+/* targets the first image with filter */
+.filter-1 img {
+
+    /* adds a grayscale filter to the image */
+    filter: grayscale(90%);
+}
+
+/* targets the second image with filter */
+.filter-2 img {
+    
+    /* adds a sepia filter to the image */
+    filter: sepia(80%);
+}
+
+/* targets the third image with filter */
+.filter-3 img {
+
+    /* adds a grayscale filter to the image */
+    filter: hue-rotate(90deg);
+}
+
+/* targets all images (original and filter) */
+.image {
+    border-radius: 16px;
+    background-color: #b38660;
+}
+
+/* targets all img tags */
+img {
+
+    /* sets every image width to 300px */
+    width: 300px;
+    border-radius: 16px;
+}
+
+/* targets all caption tags */
+figcaption {
+    padding-bottom: 4px;
+    color: #F4DFBA;
+    border-radius: 12px;
+}
+
+/* targets all image copyright tags */
+h4 {
+    padding: 10px;
+    background-color: #CA965C;
+}
+
+/* targets all links */
+figcaption a, 
+h4 a, 
+footer a{
+    text-decoration: none;
+    color: #fed485;
+}
+
+/* targets the hover state for all links */
+figcaption a:hover, 
+h4 a:hover, 
+footer a:hover {
+    color: #F4DFBA;
+}
+
+/* targets the footer */
+footer {
+    background-color: #876445;
+    color: #fdebcc;
+    padding: 6px;
+}
