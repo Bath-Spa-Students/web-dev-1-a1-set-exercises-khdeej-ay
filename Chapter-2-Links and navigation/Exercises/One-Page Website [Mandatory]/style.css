@@ -1,0 +1,148 @@
+/* targets everything */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid; 
+}
+
+/* targets evrything in body tags */
+body {
+    background-color: #DCF2F1;
+    color: #0F1035;
+
+    /* displays content on 85% of the screen */
+    width: 85%;
+
+    /* prevents white space under footer */
+    height: 100vh;    /* vh - viewport height */
+
+    /* font */
+    font-family: "Inconsolata", monospace;
+
+    /* setting both margin left and right to auto ensures everything is horizontally centered*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* targets header */
+header {
+    width: 100%; 
+    margin-top: 2em;
+}
+
+/* STYLES THE NAVIGATION BAR */
+.nav-bar {
+    width: 100%; 
+}
+
+.nav-bar nav {
+    /* hides content that spills out of parent container */
+    overflow: hidden;
+
+    /* sets the display to flex to ensure it adapts to different screens */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* targets the navigation links */
+.nav-bar nav a {
+
+    /* sets display to inline-block to adjust the height and width of child elements */
+    display: inline-block;
+    padding: 14px 20px; 
+
+    /* removes the default link styles */
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #0F1035;
+
+    /*  */
+    transition: 0.25s linear;
+}
+
+.nav-bar nav a:hover {
+    background-color: #365486;
+    color: #FFFBFC;
+}
+
+.nav-bar nav .link {
+    background-color: #365486;
+    color: #FFFBFC;
+    border: 1.5px solid #DCF2F1;
+}
+
+.nav-bar nav .link:hover {
+    border: 1.5px solid #0F1035;
+    color: #0F1035;
+    background-color: #DCF2F1;
+}
+
+/* STYLES FOR THE LANDING PAGE */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* sets landing-page height */
+    height: 470px;
+    margin-bottom: 2em;
+}
+
+.landing-page .container {
+    width: 50%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+
+.container h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+.container hr {
+    display: block;
+
+    /* height of underline */
+    height: 1.5spx;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 1px solid #0F1035;
+    margin: 2px 0;
+    padding: 0;
+}
+
+.container p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.container .trailer-button {
+    display: flex;
+    justify-content: center;
+}
+
+.trailer-button a {
+    border: 1.5px solid #0F1035;
+    color: #0F1035;
+    text-transform: uppercase;
+    font-family: "Victor Mono", monospace;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.75em 1em 0.8em 1em;
+    margin: 1em 0 0 0;
+    transition: all 0.5s ease;
+}
+
+.trailer-button a:hover {
+    background-color: #365486;
+    color: #FFFBFC;
+    border: 1.5px solid #DCF2F1;
+}
