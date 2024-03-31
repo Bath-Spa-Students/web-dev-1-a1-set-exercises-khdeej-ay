@@ -254,7 +254,8 @@ main hr {
 /* targets the subheading underlines/separators */
 .storyline hr, 
 .creatives hr, 
-.cast .character-underline {
+.cast .character-underline, 
+.reviews-underline {
 
     /* sets the separator width to 200px */
     width: 200px;
@@ -483,6 +484,113 @@ table .bold {
 .character .quote {
     text-align: center;
     margin: 10px auto 10px auto;
+}
+
+/* STYLES FOR THE REVIEWS PAGE */
+#reviews {
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* sets flow direction of elements to column (default is row) */
+    flex-direction: column;
+
+    /* allows content to take up multiple lines */
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    padding-top: 2em;
+}
+
+/* targets the reviews subheading */
+#reviews h2 {
+    text-align: center;
+    width: 100%;
+    color: #365486;
+    font-family: "Victor Mono", monospace;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+/* targets the subheading underlines/separators */
+.reviews-underline {
+
+    /* sets the separator width to 200px */
+    width: 200px;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 1.5px solid #365486;
+    margin-left: auto;
+    margin-right: auto;    
+    padding-top: 10px;
+}  
+
+/* targets the review cards container */
+#reviews .reviews-container {
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* allows content to take up multiple lines */
+    flex-wrap: wrap;
+
+    /* Aligns flex items along the main axis (x) of flex container. */
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+/* targets the review cards */
+.review {
+
+    /* sets display to inline-block to adjust the height and width of child elements */
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 16px;
+
+    /* adjusts width as needed (45% of width minus 10px) */
+    width: calc(45% - 10px); 
+
+    /* adds the border for each review card */
+    border: 1px solid #365486; 
+    text-decoration: none;
+}
+
+/* targets the hover state of the review cards */
+.review:hover {
+    background-color: #bddffa;
+}
+
+/* targets the review title and it's rating */
+.review .review-title {
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* Divides space between flex items along the main axis (x) of flex container. */
+    justify-content: space-between;
+}
+
+/* targets the review rating */
+.review .review-title h5 {
+    font-size: 14px;
+}
+
+/* targets the review date */
+.review .date {
+    margin: 5px 0;
+}
+
+/* targets the horizontal rule after the date */
+.review div hr {
+    margin-top: 10px;
+}
+
+/* targets the review paragraph */
+.review div p {
+    font-size: 15px;
+    margin-top: 5px;
 }
 
 /* targets the footer section */
