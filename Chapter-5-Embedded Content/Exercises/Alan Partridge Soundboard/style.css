@@ -1,0 +1,132 @@
+/* STYLESHEET FOR THE SOUNDBOARD */
+
+* {    /* applies to everything */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* prevents page from scrolling */
+    overflow: hidden;
+}
+
+/* targets all tags in the body tag */
+body {    
+
+    /* background color (displays while background image loads) */
+    background-color: #4896DB;
+
+    /* background image */
+    background-image: url("media/background-image.svg");
+
+    /* fixes the background within viwport */
+    background-attachment: fixed;
+    color: #242424;
+
+    /* horizontally centers all content on the page */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* targets the header */
+header {
+    margin-top: 1.6em;
+    padding: 1.2em;
+}
+
+/* targets the title */
+h1 {
+    text-align: center;
+    font-size: 42px;
+    font-family: "DM Serif Display", serif;
+}
+
+/* targets the main content */
+main {
+
+    /* sets dsplay to flex (adjustable according to screen size) */
+    display: flex;
+
+    /* adjusts space along main axis */
+    justify-content: center;
+
+    /* controls alignment of items on the cross axis */
+    align-items: center;
+}
+
+/* targets the grid container for the audios */
+.audio-grid-container {
+
+    /* sets display to grid (with rows and columns) */
+    display: grid;
+
+    /* sets the number of columns and their width */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* sets the distance between the columns */
+    column-gap: 20px;
+    margin-bottom: 10px;
+}
+
+/* targets the divs in the grid container */
+.audio-grid-container div {
+    padding: 12px;
+}
+
+/* targets the button styles */
+button {
+    font-size: 15px;
+    background-color: #fffee0;
+    border-radius: 12px;
+    border: 0.4px solid #545454;
+    width: 100%;
+
+    /* sets the distance between lines of text */
+    line-height: 2rem;
+    padding: 10px;
+
+    /* sets a slight box shadow */
+    box-shadow: 1px 1px 4px 0 rgba(40, 40, 40, 2); 
+
+    /* sets a transition for the button */
+    transition: all 0.3s ease-in-out;
+}
+
+/* targets the hover state of the button */
+button:hover {
+
+    /* changes the cursor from default to pointer */
+    cursor: pointer; 
+    color: #ff4040;
+    background-color: #fff280;
+
+    /* sets a darker box shadow */
+    box-shadow: 3px 3px 8px 0 rgba(54, 54, 54, 2); 
+}
+
+/* targets the audio */
+audio {
+    /* removes the controls and player */
+    display: none;
+}
+
+/* targets all the paragraph tags */
+p {
+    font-family: "Reddit Mono", monospace;
+}
+
+/* targets the index of the audio */
+.index {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* targets the audio name */
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* targets the duration of the audio */
+.duration {
+    font-size: 12px;
+}
