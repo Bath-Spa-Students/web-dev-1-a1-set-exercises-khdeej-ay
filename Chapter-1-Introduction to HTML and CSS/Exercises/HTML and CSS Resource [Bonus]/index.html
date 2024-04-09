@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon | Displayed before document title -->
+    <link rel="shortcut icon" href="media/favicon.svg" type="image/x-icon">
+
+    <!-- HTML & CSS Resource [Mandatory Exercise] -->
+    <title>HTML and CSS Resource</title>
+
+    <!-- Loads fonts faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link to Font Awesome icons library -->
+    <script src="https://kit.fontawesome.com/2817ef6741.js" crossorigin="anonymous"></script>
+
+    <!-- Link to external stylesheet -->
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+
+    <!-- Header: includes page heading -->
+    <header>
+        <div class="nav-bar">
+            <nav>
+
+                <!-- Menu items on the left -->
+                <div class="guides">
+                    <a href="#html">HTML Guide</a>
+                    <a href="css">CSS Guide</a>
+                </div>
+
+                <!-- Menu items on the right -->
+                <div class="more">
+                    <a href="more-info">Learn More</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content of the page -->
+    <main>
+
+        <!-- LANDING PAGE -->
+        <section class="landing-page">
+            <div class="title">
+                <h1>HTML & CSS Reference Guide</h1>
+                <p>A quick reference guide for beginner web developers. This guide contains the basics of two core web development languages: HTML and CSS.</p>
+            </div>
+        </section>
+
+        <!-- section contains HTML reference guide -->
+        <section id="html">
+
+            <!-- HTML reference guide -->
+            <div class="html-resource">
+
+                <!-- Definition of HTML -->
+                <div class="html-info">
+                    <h2>HTML - HyperText Markup Language</h2>
+
+                    <!-- HTML description -->
+                    <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.</p>
+                </div>
+
+                <!-- Describes HTML elements -->
+                <div class="elements">
+                    <h3>HTML Elements</h3>
+                    <p>HTML elements tell the browser how to display the content. Most HTML elements contain three main parts: opening tag, content and closing tag.</p>
+
+                    <!-- Container tags VS Empty tags -->
+                    <p>HTML tags that require both an opening and closing tag are called <b>container tags</b>.</li>
+                    <pre><code>&lt;p&gt;This is a paragraph.&lt;/body&gt;</code></pre>
+                    <p>HTML tags that do not need a closing tag are called <b>empty tags</b></li>
+                    <pre><code>&lt;br&gt;</code></pre>
+                </div>
+
+                <!-- Describes basic HTML syntax -->
+                <div class="boilerplate">
+                    <h3>HTML Boilerplate</h3>
+                    <p>A boilerplate in HTML is a template you will add at the start of your project. You should add this boilerplate to all of your HTML pages. </p>
+                        
+                    <!-- shortcut for syntax -->
+                    <p> The Emmet Abbreviation shortcut for the boilerplate code is <code class="inline">!</code>.</p> 
+                    
+                    <p>The following is what basic HTML Boilerplate looks like:</p>
+
+                    <!-- HTML Syntax -->
+                    <div class="syntax">
+                        <h4>Syntax</h4>
+                        <pre><code>&lt;!DOCTYPE html&gt;<br>&lt;html lang="en"&gt;<br>&lt;head&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;meta charset="UTF-8"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;title&gt;Document Title&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&emsp;&emsp;&emsp;&emsp;Text Here<br>&lt;/body&gt;<br>&lt;/html&gt;</code></pre>
+                    </div>        
+                </div>
+
+                <!-- Describes HTML tags -->
+                <div class="tags">
+                    <h3>Basic HTML Tags</h3>
+
+                    <!-- HTML Comments -->
+                    <div class="comments container">
+                        <h4>01 | Comments</h4>
+                        <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+                        <pre><code>&lt;!--This is a comment--&gt;</code></pre>
+                    </div>
+
+                    <!-- HTML Headings [h1-h6] -->
+                    <div class="headings container">
+                        <h4>02 | Headings</h4>
+                        <p>HTML headings are titles or subtitles that you want to display on a webpage. HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags. <code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code> defines the least important heading.</p>
+                        
+                        <!-- HTML Code -->
+                        <div class="code">
+                            <h5>Code</h5>
+                            <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>&lt;h2&gt;Heading 2&lt;/h2&gt;<br>&lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Paragraph <p> -->
+                    <div class="paragraph conatiner">
+                        <h4>03 | Paragraph</h4>
+                        <p>The <code>&lt;p&gt;</code> element allows you to create text paragraphs in your website. A paragraph always starts on a new line, and is usually a block of text.</p>
+
+                        <!-- HTML Code -->
+                        <div class="code">
+                            <h5>Code</h5>
+                            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;p&gt;This is another paragraph.&lt;/p&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Line Break <br> -->
+                    <div class="line-break container">
+                        <h4>04 | Line Break</h4>
+                        <p>The <code>&lt;br&gt;</code> tag is an empty or void tag. It forces the next element to be displayed on a new line.</p>
+
+                        <!-- HTML Code -->
+                        <div class="code">
+                            <h5>Code</h5>
+                            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;br&gt;<br>&lt;p&gt;This is another paragraph.&lt;/p&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal Rule <hr> -->
+                    <div class="horizontal-rule container">
+                        <h4>05 | Horizontal Rule</h4>
+                        <p>The <code>&lt;hr&gt;</code> HTML element represents a section break between elements: for example, to separate topic changes. It is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.</p>
+
+                        <!-- HTML Code -->
+                        <div class="code">
+                            <h5>Code</h5>
+                            <pre><code>&lt;p&gt;HTML is the standard markup language for creating Web pages.&lt;/p&gt;<br>&lt;hr&gt;<br>&lt;p&gt;CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media.&lt;/p&gt;<br>&lt;hr&gt;<br>&lt;p&gt;JavaScript is the programming language of HTML and the Web.&lt;/p&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Image <img> -->
+                    <div class="image container">
+                        <h4>06 | Image</h4>
+                        <p>The <code>&lt;img&gt;</code> HTML element embeds an image into the document. The <code>&lt;img&gt;</code> tag has two required attributes:<br>&nbsp;&nbsp;- src: Specifies the path to the image you want to embed.<br>&nbsp;&nbsp;- alt: Specifies an alternate text for the image, if the image for some reason cannot be displayed</p>
+
+                        <!-- HTML Code -->
+                        <div class="code">
+                            <h5>Code</h5>
+                            <pre><code>&lt;img src="media/coding.jpeg" alt="A coding illustration"&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Anchor Link <a> -->
+                    <div class="anchor container">
+                        <h4>07 | Anchor Link</h4>
+                        <p>The <code>&lt;a&gt;</code> HTML element (or anchor element), with its <code>href</code> attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.</p>
+
+                        <!-- HTML Code -->
+                        <div class="code">
+                            <h5>Code</h5>
+                            <pre><code>&lt;a href="https://example.com/"&gt;Website&lt;/a&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Div element <div> -->
+                    <div class="div container">
+                        <h4>08 | Div container</h4>
+                        <p>The <code>&lt;div&gt;</code> tag defines a division or a section in an HTML document. The <code>&lt;div&gt;</code>is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. The <code>&lt;div&gt;</code> is easily styled by using the class or id attribute.</p>
+
+                        <!-- HTML Code -->
+                        <div class="code">
+                            <h5>Code</h5>
+                            <pre><code>&lt;div class="warning"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Beware of the leopard!&lt;/p&gt;<br>&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Span element <span> -->
+                    <div class="span container">
+                        <h4>09 | Span Container</h4>
+                        <p>The <code>&lt;span&gt;</code> tag is an inline container used to mark up a part of a text, or a part of a document. The <code>&lt;span&gt;</code> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute. <br>The <code>&lt;span&gt;</code> tag is much like the <code>&lt;div&gt;</code> element, but <code>&lt;div&gt;</code> is a block-level element and <code>&lt;span&gt;</code> is an inline element.</p>
+
+                        <!-- HTML Code -->
+                        <div class="code">
+                            <h5>Code</h5>
+                            <pre><code>&lt;p&gt;Some<br>&emsp;&emsp;&emsp;&emsp;&lt;span&gt;Important&lt;/span&gt;<br>Text.&lt;/p&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Table about HTML formatting tags -->
+                    <div class="styling container">
+                        <h4>10 | Text formatting</h4>
+                        <table>
+
+                            <!-- Table Headings -->
+                            <tr>
+                                <th>Element</th>
+                                <th>Description</th>
+                                <th>Output</th>
+                            </tr>
+
+                            <!-- Bold text -->
+                            <tr>
+                                <td><code>&lt;b&gt;</code></td>
+                                <td>displays text in bold</td>
+                                <td><b>This text is bold</b></td>
+                            </tr>
+
+                            <!-- Italic Text -->
+                            <tr>
+                                <td><code class="code">&lt;i&gt;</code></td>
+                                <td>displays text in italic</td>
+                                <td><i>This text is italic</i></td>
+                            </tr>
+
+                            <!-- Underlined Text -->
+                            <tr>
+                                <td><code class="code">&lt;u&gt;</code></td>
+                                <td>displays underlined text</td>
+                                <td><u>This text is underlined</u></td>
+                            </tr>
+
+                            <!-- Highlighted Text -->
+                            <tr>
+                                <td><code class="code">&lt;mark&gt;</code></td>
+                                <td>defines text that should be marked or highlighted</td>
+                                <td><mark>This text is marked</mark></td>
+                            </tr>
+
+                            <!-- Small Text -->
+                            <tr>
+                                <td><code class="code">>&lt;small&gt;</code></td>
+                                <td>defines smaller text</td>
+                                <td><small>This text is small</small></td>
+                            </tr>
+
+                            <!-- Strong Text -->
+                            <tr>
+                                <td><code class="code">&lt;strong&gt;</code></td>
+                                <td>defines text with strong importance, displayed in bold</td>
+                                <td><strong>This text is important!</strong></td>
+                            </tr>
+
+                            <!-- Emphasized Text -->
+                            <tr>
+                                <td><code class="code">&lt;em&gt;</code></td>
+                                <td>defines emphasized text, displayed in italic</td>
+                                <td><em>This text is emphasized</em></td>
+                            </tr>
+
+                            <!-- Striked-through Text -->
+                            <tr>
+                                <td><code class="code">&lt;del&gt;</code></td>
+                                <td>defines text that has been deleted/striked-through from a document</td>
+                                <td><del>This text is striked-through</del></td>
+                            </tr>
+
+                            <!-- Subscripted Text -->
+                            <tr>
+                                <td><code class="code">&lt;sub&gt;</code></td>
+                                <td>defines subscript text</td>
+                                <td><sub>This text is subscripted</sub></td>
+                            </tr>
+
+                            <!-- Superscripted Text -->
+                            <tr>
+                                <td><code class="code">&lt;sup&gt;</code></td>
+                                <td>defines superscript text</td>
+                                <td><sup>This text is superscripted</sup></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer: includes copyright info -->
+    <footer>
+
+        <!-- Copyright Info -->
+        <p id="copyright">            
+            Copyright &copy; 2024 Syeda Khadeeja
+        </p>
+
+    </footer>
+
+</body>
+</html>
