@@ -34,12 +34,12 @@
                 <!-- Menu items on the left -->
                 <div class="guides">
                     <a href="#html">HTML Guide</a>
-                    <a href="css">CSS Guide</a>
+                    <a href="#css">CSS Guide</a>
                 </div>
 
                 <!-- Menu items on the right -->
                 <div class="more">
-                    <a href="more-info">Learn More</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn">Learn More</a>
                 </div>
             </nav>
         </div>
@@ -51,163 +51,158 @@
         <!-- LANDING PAGE -->
         <section class="landing-page">
             <div class="title">
-                <h1>HTML & CSS Reference Guide</h1>
-                <p>A quick reference guide for beginner web developers. This guide contains the basics of two core web development languages: HTML and CSS.</p>
+                <div class="info">
+                    <h1>HTML & CSS Reference Guide</h1>
+                    <p>A quick reference guide for beginner web developers. This guide contains the basics of two core web development languages: HTML and CSS.</p>
+                </div>
+                <div class="image">
+                    <img src="media/coding.jpeg" alt="A coding illustration | Credits: pinterest">
+                </div>
             </div>
         </section>
 
         <!-- section contains HTML reference guide -->
         <section id="html">
 
+            <h2>HTML - HyperText Markup Language</h2>
+
             <!-- HTML reference guide -->
-            <div class="html-resource">
+            <div class="resource">
 
-                <!-- Definition of HTML -->
-                <div class="html-info">
-                    <h2>HTML - HyperText Markup Language</h2>
+                <!-- HTML Definition -->
+                <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It is a <i>markup language</i>. HTML is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.</p>
 
-                    <!-- HTML description -->
-                    <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.</p>
-                </div>
+                <hr>
 
                 <!-- Describes HTML elements -->
-                <div class="elements">
+                <div class="elements container">
                     <h3>HTML Elements</h3>
                     <p>HTML elements tell the browser how to display the content. Most HTML elements contain three main parts: opening tag, content and closing tag.</p>
 
                     <!-- Container tags VS Empty tags -->
                     <p>HTML tags that require both an opening and closing tag are called <b>container tags</b>.</li>
                     <pre><code>&lt;p&gt;This is a paragraph.&lt;/body&gt;</code></pre>
-                    <p>HTML tags that do not need a closing tag are called <b>empty tags</b></li>
+                    <p>HTML tags that do not need a closing tag are called <b>empty tags</b>.</li>
                     <pre><code>&lt;br&gt;</code></pre>
                 </div>
 
                 <!-- Describes basic HTML syntax -->
-                <div class="boilerplate">
+                <div class="boilerplate container">
                     <h3>HTML Boilerplate</h3>
                     <p>A boilerplate in HTML is a template you will add at the start of your project. You should add this boilerplate to all of your HTML pages. </p>
                         
                     <!-- shortcut for syntax -->
-                    <p> The Emmet Abbreviation shortcut for the boilerplate code is <code class="inline">!</code>.</p> 
+                    <p> The Emmet Abbreviation shortcut for the boilerplate code is <b>!</b></p> 
                     
                     <p>The following is what basic HTML Boilerplate looks like:</p>
 
                     <!-- HTML Syntax -->
                     <div class="syntax">
-                        <h4>Syntax</h4>
                         <pre><code>&lt;!DOCTYPE html&gt;<br>&lt;html lang="en"&gt;<br>&lt;head&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;meta charset="UTF-8"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;title&gt;Document Title&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&emsp;&emsp;&emsp;&emsp;Text Here<br>&lt;/body&gt;<br>&lt;/html&gt;</code></pre>
                     </div>        
                 </div>
 
                 <!-- Describes HTML tags -->
-                <div class="tags">
+                <div class="out">
                     <h3>Basic HTML Tags</h3>
 
                     <!-- HTML Comments -->
-                    <div class="comments container">
+                    <div class="container">
                         <h4>01 | Comments</h4>
                         <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
                         <pre><code>&lt;!--This is a comment--&gt;</code></pre>
                     </div>
 
                     <!-- HTML Headings [h1-h6] -->
-                    <div class="headings container">
+                    <div class="container">
                         <h4>02 | Headings</h4>
                         <p>HTML headings are titles or subtitles that you want to display on a webpage. HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags. <code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code> defines the least important heading.</p>
                         
                         <!-- HTML Code -->
-                        <div class="code">
-                            <h5>Code</h5>
+                        <div>
                             <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>&lt;h2&gt;Heading 2&lt;/h2&gt;<br>&lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
                         </div>
                     </div>
 
                     <!-- Paragraph <p> -->
-                    <div class="paragraph conatiner">
+                    <div class="container">
                         <h4>03 | Paragraph</h4>
                         <p>The <code>&lt;p&gt;</code> element allows you to create text paragraphs in your website. A paragraph always starts on a new line, and is usually a block of text.</p>
 
                         <!-- HTML Code -->
-                        <div class="code">
-                            <h5>Code</h5>
+                        <div>
                             <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;p&gt;This is another paragraph.&lt;/p&gt;</code></pre>
                         </div>
                     </div>
 
                     <!-- Line Break <br> -->
-                    <div class="line-break container">
+                    <div class="container">
                         <h4>04 | Line Break</h4>
                         <p>The <code>&lt;br&gt;</code> tag is an empty or void tag. It forces the next element to be displayed on a new line.</p>
 
                         <!-- HTML Code -->
-                        <div class="code">
-                            <h5>Code</h5>
+                        <div>
                             <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&lt;br&gt;<br>&lt;p&gt;This is another paragraph.&lt;/p&gt;</code></pre>
                         </div>
                     </div>
 
                     <!-- Horizontal Rule <hr> -->
-                    <div class="horizontal-rule container">
+                    <div class="container">
                         <h4>05 | Horizontal Rule</h4>
                         <p>The <code>&lt;hr&gt;</code> HTML element represents a section break between elements: for example, to separate topic changes. It is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.</p>
 
                         <!-- HTML Code -->
-                        <div class="code">
-                            <h5>Code</h5>
+                        <div>
                             <pre><code>&lt;p&gt;HTML is the standard markup language for creating Web pages.&lt;/p&gt;<br>&lt;hr&gt;<br>&lt;p&gt;CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media.&lt;/p&gt;<br>&lt;hr&gt;<br>&lt;p&gt;JavaScript is the programming language of HTML and the Web.&lt;/p&gt;</code></pre>
                         </div>
                     </div>
 
                     <!-- Image <img> -->
-                    <div class="image container">
+                    <div class="container">
                         <h4>06 | Image</h4>
                         <p>The <code>&lt;img&gt;</code> HTML element embeds an image into the document. The <code>&lt;img&gt;</code> tag has two required attributes:<br>&nbsp;&nbsp;- src: Specifies the path to the image you want to embed.<br>&nbsp;&nbsp;- alt: Specifies an alternate text for the image, if the image for some reason cannot be displayed</p>
 
                         <!-- HTML Code -->
-                        <div class="code">
-                            <h5>Code</h5>
+                        <div>
                             <pre><code>&lt;img src="media/coding.jpeg" alt="A coding illustration"&gt;</code></pre>
                         </div>
                     </div>
 
                     <!-- Anchor Link <a> -->
-                    <div class="anchor container">
+                    <div class="container">
                         <h4>07 | Anchor Link</h4>
                         <p>The <code>&lt;a&gt;</code> HTML element (or anchor element), with its <code>href</code> attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.</p>
 
                         <!-- HTML Code -->
-                        <div class="code">
-                            <h5>Code</h5>
+                        <div>
                             <pre><code>&lt;a href="https://example.com/"&gt;Website&lt;/a&gt;</code></pre>
                         </div>
                     </div>
 
                     <!-- Div element <div> -->
-                    <div class="div container">
+                    <div class="container">
                         <h4>08 | Div container</h4>
                         <p>The <code>&lt;div&gt;</code> tag defines a division or a section in an HTML document. The <code>&lt;div&gt;</code>is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. The <code>&lt;div&gt;</code> is easily styled by using the class or id attribute.</p>
 
                         <!-- HTML Code -->
-                        <div class="code">
-                            <h5>Code</h5>
+                        <div>
                             <pre><code>&lt;div class="warning"&gt;<br>&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Beware of the leopard!&lt;/p&gt;<br>&lt;/div&gt;</code></pre>
                         </div>
                     </div>
 
                     <!-- Span element <span> -->
-                    <div class="span container">
+                    <div class="container">
                         <h4>09 | Span Container</h4>
                         <p>The <code>&lt;span&gt;</code> tag is an inline container used to mark up a part of a text, or a part of a document. The <code>&lt;span&gt;</code> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute. <br>The <code>&lt;span&gt;</code> tag is much like the <code>&lt;div&gt;</code> element, but <code>&lt;div&gt;</code> is a block-level element and <code>&lt;span&gt;</code> is an inline element.</p>
 
                         <!-- HTML Code -->
-                        <div class="code">
-                            <h5>Code</h5>
+                        <div>
                             <pre><code>&lt;p&gt;Some<br>&emsp;&emsp;&emsp;&emsp;&lt;span&gt;Important&lt;/span&gt;<br>Text.&lt;/p&gt;</code></pre>
                         </div>
                     </div>
 
                     <!-- Table about HTML formatting tags -->
-                    <div class="styling container">
+                    <div class="container">
                         <h4>10 | Text formatting</h4>
                         <table>
 
@@ -248,7 +243,7 @@
 
                             <!-- Small Text -->
                             <tr>
-                                <td><code class="code">>&lt;small&gt;</code></td>
+                                <td><code class="code">&lt;small&gt;</code></td>
                                 <td>defines smaller text</td>
                                 <td><small>This text is small</small></td>
                             </tr>
@@ -294,6 +289,138 @@
             </div>
         </section>
 
+        <!-- section contains CSS reference guide -->
+        <section id="css">
+
+            <h2>CSS - Cascading Style Sheets</h2>
+
+            <!-- CSS reference guide -->
+            <div class="resource">
+
+                <!-- CSS Definition -->
+                <p>CSS (Cascading Style Sheets) is the language we use to style a Web page. Like HTML, CSS is not a programming language. CSS is a style sheet language. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. It is what you use to selectively style HTML elements. CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+                </p>
+
+                <hr>
+
+                <!-- Describes methods of applying CSS -->
+                <div class="container">
+                    <h3>Applying CSS</h3>
+                    <p>CSS can be added to HTML documents in 3 ways: </p>
+                    <ul>
+                        <li><b>Inline</b> - by using the style attribute inside HTML elements</li>
+                        <li><b>Internal</b> - by using a <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> section</li>
+                        <li><b>External</b> - by using a <code>&lt;link&gt;</code> element to link to an external CSS file</li>
+                    </ul>
+                    <p>The most common way to add CSS, is to keep the styles in external CSS files.</p>
+                </div>
+
+                <!-- Describes basic CSS syntax -->
+                <div class="container">
+                    <h3>CSS Syntax</h3>
+                    <p>A CSS rule consists of a selector and a declaration block.</p>
+                    <p>A selector defines the element(s) to be styled. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                    <ul>
+                        <li><b>Property name</b> assigns a style or behavior to an HTML element. Examples include: color, border, margin, font-style, and transform.</li>
+                        <li><b>Property value</b> can include a single integer or keyword, to a series of keywords and values with or without units</li>
+                    </ul>
+
+                    <!-- CSS Syntax -->
+                    <div class="syntax">
+                        <pre><code>selector {<br>&emsp;&emsp;&emsp;&emsp;property 1 : value;<br>&emsp;&emsp;&emsp;&emsp;property 2 : value;<br>&emsp;&emsp;&emsp;&emsp;property 3 : value;<br>}</code></pre>
+                    </div>        
+                </div>
+
+                <!-- Describes CSS Implementation -->
+                <div class="out">
+                    <h3>Styling Text</h3>
+                    <p>The CSS properties used to style text generally fall into two categories, which we'll look at separately in this article: </p>
+                    <ul>
+                        <li><b>Font styles:</b> Properties that affect a text's font, e.g., which font gets applied, its size, and whether it's bold, italic, etc. </li>
+                        <li><b>Text layout styles:</b> Properties that affect the spacing and other layout features of the text, allowing manipulation of, for example, the space between lines and letters, and how the text is aligned within the content box. </li>
+                    </ul>
+
+                    <!-- Font Styles Subheading -->
+                    <h3 class="subheading">Font Styles</h3>
+
+                    <!-- Text color -->
+                    <div class="container">
+                        <h4>01 | Color</h4>
+                        <p>The <code>color</code> property sets the color of the foreground content of the selected elements, which is usually the text, but can also include a couple of other things, such as an underline or overline placed on text using the <code>text-decoration property</code>.</p>
+                        <p><code>color</code> can accept any CSS color unit (for example: rgb, hex, etc), for example: </p>
+                        <div>
+                            <pre><code>p { <br>&emsp;&emsp;color: red; <br>} </code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Font families -->
+                    <div class="container">
+                        <h4>02 | Font families</h4>
+                        <p>To set a different font for your text, you use the <code>font-family</code> property — this allows you to specify a font (or list of fonts) for the browser to apply to the selected elements. A simple example looks like so:</p>
+                        <div>
+                            <pre><code>p {<br>&emsp;&emsp;font-family: Arial;<br>}</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Font size -->
+                    <div class="container">
+                        <h4>03 | Font size</h4>
+                        <p>The <code>font-size</code> CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <code>&lt;length&gt;</code> units, such as <code>em</code>, <code>ex</code>, and so forth. The most common units you can use to size text are: <code>px</code>, <code>em</code>, <code>rem</code>.</p>
+                        <div>
+                            <pre><code>p { <br>&emsp;&emsp;font-size: 12px; <br>}</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Font style -->
+                    <div class="container">
+                        <h4>04 | Font style</h4>
+                        <p>The <code>font-style</code> CSS property sets whether a font should be styled with a normal, italic, or oblique face from its font-family.</p>
+                        <div>
+                            <pre><code>p { <br>&emsp;&emsp;font-style: italic; <br>}</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Font weight -->
+                    <div class="container">
+                        <h4>05 | Font weight</h4>
+                        <p>The <code>font-weight</code> CSS property sets the weight (or boldness) of the font. The weights available depend on the font-family that is currently set.</p>
+                        <div>
+                            <pre><code>p { <br>&emsp;&emsp;font-weight: bold;<br>}
+                            </code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Text transform -->
+                    <div class="container">
+                        <h4>06 | Text transform</h4>
+                        <p>The <code>text-transform</code> CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. </p>
+                        <div>
+                            <pre><code>h1 { <br>&emsp;&emsp;text-transform: capitalize;<br>}</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Text decoration -->
+                    <div class="container">
+                        <h4>07 | Text decoration</h4>
+                        <p>The <code>text-decoration</code> shorthand CSS property sets the appearance of decorative lines on text. Available values are: <code>none</code>, <code>underline</code>, <code>overline</code>, and <code>line-through</code></p>
+                        <div>
+                            <pre><code>h2 { <br>&emsp;&emsp;text-decoration: underline;<br>}</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Text shadow -->
+                    <div class="container">
+                        <h4>08 | Text shadow</h4>
+                        <p>The <code>text-shadow</code> CSS property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and any of its decorations. </p>
+                        <div>
+                            <pre><code>h2 {<br>&emsp;&emsp;text-shadow: 4px 4px 5px red;<br>}</code></pre>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer: includes copyright info -->
@@ -301,9 +428,8 @@
 
         <!-- Copyright Info -->
         <p id="copyright">            
-            Copyright &copy; 2024 Syeda Khadeeja
+            Made by: Syeda Khadeeja | Credits: <a href="w3schools.com">w3schools</a> - <a href="https://developer.mozilla.org/en-US/">MDN Docs</a>
         </p>
-
     </footer>
 
 </body>
