@@ -1,0 +1,614 @@
+/* targets everything */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* targets evrything in body tags */
+body {
+    background-color: #DCF2F1;
+    color: #0F1035;
+
+    /* displays content on 85% of the screen */
+    width: 85%;
+
+    /* prevents white space under footer */
+    height: 100vh;    /* vh - viewport height */
+
+    /* font */
+    font-family: "Inconsolata", monospace;
+
+    /* setting both margin left and right to auto ensures everything is horizontally centered*/
+    margin-left: auto;
+    margin-right: auto;
+
+    scroll-behavior: smooth;
+}
+
+/* targets header */
+header {
+    width: 100%; 
+    margin-top: 2em;
+}
+
+/* STYLES THE NAVIGATION BAR */
+.nav-bar {
+    width: 100%; 
+}
+
+.nav-bar nav {
+    /* hides content that spills out of parent container */
+    overflow: hidden;
+
+    /* sets the display to flex to ensure it adapts to different screens */
+    display: flex;
+
+    /* Divides space between flex items along the main axis (x) of flex container. */
+    justify-content: space-between;
+}
+
+/* targets the navigation links */
+.nav-bar nav a {
+
+    /* sets display to inline-block to adjust the height and width of child elements */
+    display: inline-block;
+    padding: 14px 20px; 
+
+    /* removes the default link styles */
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #0F1035;
+
+    /*  */
+    transition: 0.25s linear;
+}
+
+/* targets the hover state of the nav links */
+.nav-bar nav a:hover {
+    background-color: #365486;
+    color: #F1FAFF;
+}
+
+/* targets the cta nav link */
+.nav-bar nav .link {
+    background-color: #365486;
+    color: #F1FAFF;
+    border: 1.5px solid #DCF2F1;
+}
+
+/* targets hover state of the cta nav link */
+.nav-bar nav .link:hover {
+    border: 1.5px solid #365486;
+    color: #365486;
+    background-color: #DCF2F1;
+}
+
+/* STYLES FOR THE LANDING PAGE */
+.landing-page {
+
+    /* sets display to flex to make child tags flexible */
+    display: flex;
+
+    /* Aligns flex items along the main axis (x) of flex container. */
+    justify-content: center;
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+
+    /* sets flow direction of elements to column (default is row) */
+    flex-direction: column;
+
+    /* sets landing-page height */
+    height: 510px;
+}
+
+/* targets the landing page container */
+.landing-page .container {
+
+    /* sets the landing page contents width to 51% */
+    width: 51%;
+    height: 320px;
+
+    /* sets display to flex to make child tags flexible */
+    display: flex;
+
+    /* sets flow direction of elements to column (default is row) */
+    flex-direction: column;
+
+    /* Divides space between flex items evenly along the main axis (x) of flex container. */
+    justify-content: space-evenly; 
+}
+
+/* targets the title */
+.container h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 48px;
+    text-align: center;
+
+    /* adds space between the title letters */
+    letter-spacing: 1px;
+    color: #365486;
+}
+
+/* targets the title underline */
+.container hr {
+    display: block;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 1.5px solid #365486;
+    margin: 2px 0;
+    padding: 0;
+}
+
+/* targets the small description */
+.container p {
+    margin-top: 2px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* targets the call to action trailer button */
+.container .trailer-button {
+
+    /* sets display to flex to make the button responsive */
+    display: flex;
+
+    /* Aligns flex items along the main axis (x) of flex container. */
+    justify-content: center;
+}
+
+/* targets the cta trailer link */
+.trailer-button a {
+    padding: 0.75em 1em 0.8em 1em;
+    margin-top: 1em;
+    color: #365486;
+    font-family: "Victor Mono", monospace;
+    font-weight: 600;
+
+    /* transforms the link to uppercase */
+    text-transform: uppercase;
+
+    /* adds space between the cta trailer letters */
+    letter-spacing: 1.8px;
+    border: 1.5px solid #365486;
+
+    /* link eases in to screen in 0.5s after loading */
+    transition: all 0.5s ease;
+}
+
+/* targets the hover state of the trailer button */
+.trailer-button a:hover {
+    background-color: #365486;
+    color: #f1faff;
+    border: 1.5px solid #DCF2F1;
+}
+
+/* targets the separator between the sections */
+main hr {
+    display: block;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 1.5px solid #365486;
+    margin: 2px 0;
+    padding: 0;
+}
+
+/* STYLES FOR THE ABOUT (OVERVIEW & KEY INFO) PAGE */
+#overview {
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+
+    /* sets page height */
+    height: 600px;
+    padding: 2em auto;
+}
+
+/* targets the overview section */
+#overview .info-container {
+    
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* sets flow direction of elements to column (default is row) */
+    flex-direction: column;
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+}
+
+/* targets the storyline section */
+#overview .storyline {
+
+    /* sets the width to 75% of parent tag */
+    width: 75%;
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* sets flow direction of elements to column (default is row) */
+    flex-direction: column;
+
+    /* Divides space between flex items evenly along the main axis (x) of flex container. */
+    justify-content: space-evenly; 
+    text-align: center;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 1em;
+}
+
+/* targets the subheading */
+.storyline h2 {
+    color: #365486;
+    font-family: "Victor Mono", monospace;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* targets the subheading underlines/separators */
+.storyline hr, 
+.creatives hr, 
+.cast .character-underline, 
+.reviews-underline {
+
+    /* sets the separator width to 200px */
+    width: 200px;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 1.5px solid #365486;
+
+    margin-left: auto;
+    margin-right: auto;    
+    margin-bottom: 28px;
+    padding: 0;
+}  
+
+/* targets the tagline */
+.storyline h3 {
+    color: #365486;
+    font-family: "Glegoo", serif;
+
+    /* sets the font style to italic */
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+/* targets the overview paragraph */
+.storyline p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* targets the key information table */
+.key-info table {
+    
+    /* removes table borders */
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.8em;
+}
+
+/* targets the span element in the key info table */
+.key-info table span {
+    font-weight: 600;
+}
+
+/* targets table body */
+tbody {
+
+    /* sets table's outer border */
+    border: 1.5px solid #365486; 
+} 
+
+/* targets table rows */
+tr {
+
+    /* sets border between rows */
+    border: 1px solid #365486; 
+}
+
+/* targets table cells */
+table td {
+    text-align: left;
+    padding: 10px 14px;
+}
+
+/* targets the class bold table cells */
+table .bold {
+    color: #365486;
+}
+
+/* STYLES FOR THE CREATIVE TEAM PAGE */
+#creative-team {
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* Aligns flex items along the main axis (x) of flex container. */
+    justify-content: center; 
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+
+    /* sets page height */
+    height: 600px;
+    width: 100%;
+    padding: 2em auto;
+}
+
+/* targets the creative team container */
+#creative-team .creatives {
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* sets flow direction of elements to column (default is row) */
+    flex-direction: column;
+
+    /* Divides space between flex items evenly along the main axis (x) of flex container. */
+    justify-content: space-evenly; 
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+
+    /* sets the container height */
+    height: 400px;
+}
+
+/* targets the creative team subheading */
+.creatives h2 {
+    text-align: center;
+    width: 100%;
+    color: #365486;
+    font-family: "Victor Mono", monospace;
+    font-size: 32px;
+}
+
+/* targets the creative team subheading separator */
+#creative-team .creatives hr {
+    margin-bottom: 42px;
+}
+
+/* targets the creative team table */
+.creatives-table {
+    font-size: 19px;
+    
+    /* removes table borders */
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/* targets the hover state of the creative team table */
+.creatives-table tr:hover {
+    background-color: #bddffa;
+}
+
+/* targets the table cells */
+.creatives-table td {
+    padding: 10px 16px;
+}
+
+/* STYLES FOR THE CHARACTERS PAGE */
+#characters {
+   /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* Aligns flex items along the main axis (x) of flex container. */
+    justify-content: center; 
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+    width: 100%;
+}
+
+/* targets the main characters section div */
+#characters .cast {
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* sets flow direction of elements to column (default is row) */
+    flex-direction: column;
+
+    /* Aligns flex items along the cross axis of flex container.  */
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+/* targets the characters subheading */
+.cast h2 {
+    text-align: center;
+    width: 100%;
+    color: #365486;
+    font-family: "Victor Mono", monospace;
+    font-size: 32px;
+    margin-bottom: 10px;
+    padding-top: 1.5em;
+}
+
+/* targets the character cards container */
+.characters-container {
+    
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* allows content to take up multiple lines */
+    flex-wrap: wrap;
+    
+    /* Aligns flex items along the main axis (x) of flex container. */
+    justify-content: center;
+    padding: 10px;
+}
+
+/* targets the character cards */
+.character {
+
+    /* sets display to inline-block to adjust the height and width of child elements */
+    display: inline-block;
+    margin: 12px;
+    padding: 14px 18px;
+
+    /* adjusts width as needed (45% of width minus 10px) */
+    width: calc(30% - 10px);
+
+    /* adds border for each character card */
+    border: 1px solid #365486; 
+}
+
+/* targets the hover state of the character cards */
+.character:hover {
+    background-color: #bddffa;
+}
+
+/* targets the character name */
+.character h3 {
+    margin-bottom: 2px;
+}
+
+/* targets the voice actor name */
+.character h5 {
+    margin-bottom: 3px;
+}
+
+/* targets the character quote */
+.character .quote {
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+/* STYLES FOR THE REVIEWS PAGE */
+#reviews {
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* sets flow direction of elements to column (default is row) */
+    flex-direction: column;
+
+    /* allows content to take up multiple lines */
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    padding-top: 2em;
+}
+
+/* targets the reviews subheading */
+#reviews h2 {
+    text-align: center;
+    width: 100%;
+    color: #365486;
+    font-family: "Victor Mono", monospace;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+/* targets the subheading underlines/separators */
+.reviews-underline {
+
+    /* sets the separator width to 200px */
+    width: 200px;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 1.5px solid #365486;
+    margin-left: auto;
+    margin-right: auto;    
+    padding-top: 10px;
+}  
+
+/* targets the review cards container */
+#reviews .reviews-container {
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* allows content to take up multiple lines */
+    flex-wrap: wrap;
+
+    /* Aligns flex items along the main axis (x) of flex container. */
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+/* targets the review cards */
+.review {
+
+    /* sets display to inline-block to adjust the height and width of child elements */
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 16px;
+
+    /* adjusts width as needed (45% of width minus 10px) */
+    width: calc(45% - 10px); 
+
+    /* adds the border for each review card */
+    border: 1px solid #365486; 
+    text-decoration: none;
+}
+
+/* targets the hover state of the review cards */
+.review:hover {
+    background-color: #bddffa;
+}
+
+/* targets the review title and it's rating */
+.review .review-title {
+
+    /* sets display to flex to make the section responsive */
+    display: flex;
+
+    /* Divides space between flex items along the main axis (x) of flex container. */
+    justify-content: space-between;
+}
+
+/* targets the review rating */
+.review .review-title h5 {
+    font-size: 14px;
+}
+
+/* targets the review date */
+.review .date {
+    margin: 5px 0;
+}
+
+/* targets the horizontal rule after the date */
+.review div hr {
+    margin-top: 10px;
+}
+
+/* targets the review paragraph */
+.review div p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* targets the footer section */
+footer {
+    text-align: center;
+    padding: 8px;
+    background-color: #0F1035;
+    color: #F1FAFF;
+    overflow: hidden;
+}
+
+/* targets the link in the footer */
+footer a {
+    text-decoration: none;
+    color: #bddffa;
+}
+
+/* targets the hover state of the link in the footer */
+footer a:hover {
+    color: #86c8ff;
+}
