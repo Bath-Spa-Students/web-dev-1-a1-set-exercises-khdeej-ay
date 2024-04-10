@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+
+    <!-- adapts screen to different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon - displayed before document title -->
+    <link rel="icon" href="media/gas-pump-solid.svg" type="image/x-icon">
+
+    <!-- Petrol Calculator [Mandatory] -->
+    <title>Petrol Calculator</title> 
+
+    <!-- Loads fonts faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Link to external stylesheet -->
+    <link rel = "stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+    <main>
+
+        <div class="container">
+
+            <!-- Div to hold all input fields -->
+            <div class="info">
+
+                <!-- Heading -->
+                <h1>Petrol Calculator</h1>
+                <div class="separator">
+                    <hr>
+                </div>
+
+                <!-- Enter cost of Petrol [default: 1.72] -->
+                <div class="cost">
+                    
+                    <!-- Label for the input field [costOfPetrol] -->
+                    <label for="costOfPetrol">Petrol per Liter</label> 
+                    
+                    <!-- Input field for user to enter the cost of petrol -->
+                    <input type="number" value="1.72" id="costOfPetrol" value="1.72" step="0.01" required> 
+                
+                </div>
+
+                <!-- Number of Liters of Petrol [default: 0 -->
+                <div class="petrol"> 
+                    
+                    <!-- Label for the input field [noOfLiters] -->
+                    <label for="liters">Number of Liters</label> 
+                    
+                    <!-- Input field for user to enter the number of liters -->
+                    <input type="number" value="0" id="liters" step="0.01" required>
+
+                </div>
+
+                <div class="calculate-button">
+                    <!-- Button for calculation -->
+                    <button onclick="calculateTotal()" id="calculateButton">Calculate</button>
+                </div>
+
+                <p id="total"></p>
+
+            </div>
+
+            <!-- Div to hold the image -->
+            <div class="image">
+                <img src="media/car-on-road.jpeg" alt="A self-driving car on the road">
+            </div>
+        </div>
+        
+        <!-- Copyright Info -->  
+        <footer>
+            Copyright &copy; 2024 Syeda Khadeeja
+        </footer>
+    </main>
+
+    <!-- Link to external javasript file -->
+    <script src="script.js"></script> 
+
+</body>
+</html>
