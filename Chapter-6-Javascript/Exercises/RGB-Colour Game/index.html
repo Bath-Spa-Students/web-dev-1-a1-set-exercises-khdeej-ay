@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+
+    <!-- adapts screen to different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon - displayed before document title -->
+    <link rel="icon" href="media/favicon.svg" type="image/x-icon">
+
+    <!-- RGB Color Guessing Game [Bonus] -->
+    <title>RGB Color Game</title> 
+
+    <!-- Loads fonts faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+    <!-- Link to external stylesheet -->
+    <link rel = "stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- Main Content of the page -->
+    <main>
+        
+        <!-- Game display container -->
+        <div class="container">
+
+            <!-- Game title -->
+            <h1>RGB Color Guessing Game</h1>
+
+            <!-- Guildeline -->
+            <p class="rule">Guess the color that matches the given RGB value</p>
+
+            <!-- rgb value to be guessed -->
+            <div id="rgbValue"></div>
+
+            <!-- rgb color choices container -->
+            <div id="colors">
+                <!-- colors will be dynamically added here -->
+            </div>
+
+            <!-- displays game over message and the final score -->
+            <div id="message"></div>
+
+            <!-- scoreboard contains the current score and the number of lives-->
+            <div class="scoreboard">
+
+                <!-- score | starts from 0 -->
+                <p id="score">Score: 0</p>
+
+                <!-- lives | starts from three and descends to zero -->
+                <p id="lives">Lives: 3</p>
+            </div>
+
+            <!-- line break -->
+            <br>
+
+            <!-- resets the game -->
+            <button id="resetButton">Reset Game</button>
+        </div>
+
+        <!-- Footer: includes copyright info -->
+        <footer>        
+            Copyright &copy; 2024 RGB Game | Made by: Syeda Khadeeja
+        </footer>
+
+    </main>
+
+    <script src="index.js"></script> 
+</body>
+</html>
