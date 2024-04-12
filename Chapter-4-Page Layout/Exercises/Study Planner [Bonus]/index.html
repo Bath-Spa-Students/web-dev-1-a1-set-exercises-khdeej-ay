@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+
+    <!-- adapts screen to different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon - displayed before document title -->
+    <link rel="icon" href="media/favicon.svg" type="image/x-icon">
+
+    <!-- Study Planner [Bonus] -->
+    <title>Study Planner</title> 
+
+    <!-- Loads fonts faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    
+    <!-- Link to Font Awesome icons library -->
+    <script src="https://kit.fontawesome.com/2817ef6741.js" crossorigin="anonymous"></script>
+
+    <!-- Link to external stylesheet -->
+    <link rel = "stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+
+        <!-- image banner -->
+        <div class="banner">
+            <img src="media/banner.jpeg" alt="clouds">    
+        </div>
+    </header>
+
+    <!-- Main Content of the page -->
+    <main>
+
+        <!-- study planner title -->
+        <h1>Web Development</h1>
+        <hr class="separator">
+
+        <!-- web dev description -->
+        <p class="info">This module teaches students to create interactive, stunning websites. Students learn the three main languages of the Web: HTML, CSS, and JavaScript. They also learn to structure content appropriately. Students gain these skills through a project-based curriculum. This module is for beginners with little to no prior experience.</p>
+        <hr class="separator">
+
+        <!-- container that holds the two columns -->
+        <div class="container">
+
+            <!-- First column | menu list -->
+            <div class="menu">
+
+                <!-- menu heading -->
+                <h2>menu</h2>
+                <hr>
+
+                <!-- menu item -->
+                <div class="item">
+
+                    <!-- icon -->
+                    <i class="fa-solid fa-book"></i>                    
+                    <p>journal</p>
+                </div>
+
+                <!-- menu item -->
+                <div class="item">
+
+                    <!-- icon -->
+                    <i class="fa-solid fa-layer-group"></i>
+                    <p>bookshelf</p>
+                </div>
+
+                <!-- menu item -->
+                <div class="item">
+
+                    <!-- icon -->
+                    <i class="fa-solid fa-list"></i>
+                    <p><b>to-do</b></p>
+                </div>
+
+                <!-- menu item -->
+                <div class="item">
+
+                    <!-- icon -->
+                    <i class="fa-solid fa-folder"></i>
+                    <p>documents</p>
+                </div>
+
+                <!-- menu item -->
+                <div class="item">
+
+                    <!-- icon -->
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p>tutors</p>
+                </div>
+
+                <!-- menu item -->
+                <div class="item">
+
+                    <!-- icon -->
+                    <i class="fa-solid fa-chalkboard"></i>
+                    <p>self-learn</p>
+                </div>
+            </div>
+
+            <!-- Second column | To do list -->
+            <div class="to-do">
+
+                <!-- to do heading -->
+                <h2>to-do</h2>
+                <hr>
+
+                <!-- container for list items -->
+                <div class="subjects">
+
+                    <!-- task 1 -->
+                    <div class="thing">
+
+                        <!-- image -->
+                        <div class="image">
+                            <img src="media/1.jpeg" alt="field of diasies">
+                        </div>
+                        <h3>Python programming</h3>
+                        <p>vending machine project</p>
+                    </div>
+
+                    <!-- task 2 -->
+                    <div class="thing">
+
+                        <!-- image -->
+                        <div class="image">
+                            <img src="media/2.jpeg" alt="bouqet of beautiful pink flowers">
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>RGB color guessing game</p>
+                    </div>
+
+                    <!-- task 3 -->
+                    <div class="thing">
+
+                        <!-- image -->
+                        <div class="image">
+                            <img src="media/3.jpeg" alt="field of colorful flowers">
+                        </div>
+                        <h3>Editing</h3>
+                        <p>Comments: recipe page</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer: includes copyright info -->
+    <footer>
+
+        <!-- Copyright Info -->
+        <p id="copyright">            
+            Copyright &copy; 2024 Study Planner | Made by: Syeda Khadeeja
+        </p>
+    </footer>
+</body>
+</html>
