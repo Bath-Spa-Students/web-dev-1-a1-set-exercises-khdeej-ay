@@ -1,0 +1,154 @@
+/* STYLESHEET FOR THE RGB COLOR GAME */
+
+/* targets all tags in the body tag */
+body {    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nanum Gothic Coding", monospace;
+
+    /* background color */
+    background-color: #eee;
+    height: 100vh;
+    color: #303030;
+
+    /* horizontally and vertically centers all content on the page */
+    margin: auto;
+} 
+
+/* targets the game display container div */
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* targets the game title */
+h1 {
+    margin-bottom: 10px;
+}
+
+/* targets the guideline */
+.rule {
+    margin-bottom: 28px;
+}
+
+/* targets the rgb value (to be guessed) displayed */
+#rgbValue {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* targets the color choices container */
+#colors {
+    display: flex;
+    justify-content: center;
+
+    /* sets a gap of 20px between each choice */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* targets each color choice */
+.color {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+
+    /* changes the cursor to a pointer when on the color */
+    cursor: pointer;
+    border: 2px solid #cecece;
+
+    /* tranisitions the transform property with the hover state */
+    transition: transform 0.25s;
+}
+
+/* targets the hover state of each color choice */
+.color:hover {
+
+    /* scales the hover state of each color */
+    transform: scale(1.04);
+}
+
+/* targets the final score and game over message */
+#message {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+/* targets the scoreboard div (container for score and lives) */
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* targets the score and lives */
+#score,
+#lives {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* targets the restart game button */
+#resetButton {
+    padding: 12px 20px;
+    margin-bottom: 6px;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 600;
+    font-size: 16px;
+
+    /* increases space between letters */
+    letter-spacing: 1.2px;
+
+    /* transforms tect to uppercase */
+    text-transform: uppercase;
+    background-color: #cecece;
+    color: #303030;
+
+    /* removes button border */
+    border: none;
+    border-radius: 6px;
+
+    /* changes cursor to pointer when on button */
+    cursor: pointer;
+
+    /* tranisitions the bg color with the hover state */
+    transition: background-color 0.2s;
+
+    /* sets a box shadow on the button */
+    box-shadow: 2px 2px 2px #303030;
+}
+
+/* targets the hover state of the restart button */
+#resetButton:hover {
+    background-color: #9f9f9f;
+    color: #404040;
+}
+
+/* targets the active state of the button (when pressed) */
+#resetButton:active {
+    /* together these effects make button seem like it is pressed */
+
+    /* removes box shadow */
+    box-shadow: none;
+
+    /* transforms y axis 2px down */
+    transform: translateY(2px);
+
+    /* transforms y axis 2px right */
+    transform: translateX(2px);
+}
+
+/* targets the footer */
+footer {
+    font-family: "Martian Mono", monospace;
+    font-size: 12px;
+    padding: 8px;
+    color: #808080;
+}
