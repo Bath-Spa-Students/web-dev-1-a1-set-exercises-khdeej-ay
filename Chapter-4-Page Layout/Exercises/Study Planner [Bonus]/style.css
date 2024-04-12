@@ -1,0 +1,157 @@
+/* STYLESHEET FOR THE STUDY PLANNER */
+
+* {    /* applies to everything */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* prevents page from scrolling */
+    overflow: hidden;
+}
+
+/* targets the body content */
+body {
+    background-color: #ddd4ce;
+    color: #242424;
+    font-family: "Nanum Gothic Coding", monospace;
+    height: 100vh;
+
+    /* horizontally centers all content on the page */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* targets the icons */
+i {
+    color: #242424;
+    margin: auto 0;
+
+    /* sets the opacity of icons lower */
+    opacity: 45%;
+}
+
+/* targets the banner div */
+.banner {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* targets the banner image */
+.banner img {
+    width: 100vw;
+
+    /* fits image to cover the div */
+    object-fit: cover;
+}
+
+/* targets the title */
+h1 {
+    margin: 4px 0;
+    font-family: "Martian Mono", monospace;
+    font-weight: 500;
+}
+
+/* targets the main content */
+main {
+    width: 84vw;
+    margin: 1.8em auto 0 auto;
+}
+
+/* targets the container div (with the two columns) */
+.container {
+    display: flex;
+}
+
+/* targets the main paragraph */
+main .info {
+    margin: 8px auto;
+    padding: 10px 14px;
+    background-color: #c5bcbe;
+    border-radius: 2px;
+}
+
+/* targets the first column */
+.menu {
+    background-color: #c5bcbe;
+    width: 18vw;
+    padding: 16px;
+    margin-right: 2em;
+    border-radius: 4px;
+}
+
+/* targets the horizontal rule */
+hr {
+    margin: 4px auto 8px auto;
+}
+
+/* targets each menu item */
+.item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* targets the menu item content */
+.menu p {
+    margin: 2px 0 2px 6px;
+}
+
+/* targets the subjects div */
+.subjects {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* targets the second column */
+.to-do {
+    flex-grow: 1;
+}
+
+/* targets each task */
+.subjects .thing {
+    border-radius: 6px;
+    border: 1px solid #5f87ab;
+}
+
+/* targets each task's image */
+.to-do .subjects img {
+    width: 300px;
+}
+
+/* targets each task heading */
+.subjects .thing h3 {
+    padding: 8px 10px 2px 10px;
+    font-size: 18px;
+}
+
+/* targets each task description */
+.subjects .thing p {
+    padding: 4px 10px 8px 10px;
+}
+
+/* targets each task's image container */
+.image {
+    width: 20vw;
+    height: 24vh;
+    border-radius: 6px;
+}
+
+/* targets the footer */
+footer {
+    width: 100vw;
+    text-align: center;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    background-color: #5f87ab;
+}
+
+/* targets the copyright info */
+footer p {
+    font-family: "Martian Mono", monospace;
+    font-size: 12px;
+    margin: auto auto;
+    padding: 4px;
+    background-color: #5f87ab;
+}
