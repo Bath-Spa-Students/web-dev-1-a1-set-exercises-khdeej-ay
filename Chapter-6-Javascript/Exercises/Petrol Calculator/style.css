@@ -1,0 +1,189 @@
+/* STYLESHEET FOR THE PETROL CALCULATOR */
+
+* {    /* applies to everything */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* targets all tags in the body tag */
+body {    
+    background-color: #ea693e;
+    color: #242424;
+    font-family: "Noto Sans", sans-serif;
+    height: 100vh;
+
+    /* horizontally and vertically centers all content on the page */
+    margin: auto;
+}
+
+/* targets common flex display styles */
+main, 
+.container, 
+.info, 
+.image, 
+.calculate-button {
+    display: flex;
+}
+
+/* targets some common styles */
+main, 
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+/* targets main content */
+main {
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* targets the petrol calculator flex container */
+.container {
+    background-color: #fefcd7;
+
+    /* gives the calculator a shadow */
+    box-shadow: 4px 4px 4px 2px #293E61;
+    border-radius: 24px;
+}
+
+/* targets the title */
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* targets the title and calculate button */
+h1, button {
+    font-family: "Roboto Slab", serif;
+}
+
+/* targets the text content of the calculator */
+.info {
+    width: 28vw;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fefcd7;
+    padding: 1.5em 2em;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+/* targets the image container of the calculator */
+.image {
+    width: 30vw;
+    height: 60vh;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+} 
+
+/* targets the image of the calculator (right column) */
+img {
+    height: 540px;
+}
+
+/* targets the separator */
+hr {
+    display: block;
+    border: 0;
+
+    /* sets separator color */
+    border-top: 2.4px solid #293E61;
+    margin: 8px auto;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+/* targets the label element */
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* targets the input fields */
+input {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #cad6c8;
+
+    /* sets input field opacity to 80% */
+    opacity: 80%;
+    margin: 4px auto 15px auto;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* targets the focus state of the input fields */
+input:focus {
+    border: 0.4px solid #293E61; /* Adds a blue outline when focused */
+}
+
+/* targets the calculate button container */
+.calculate-button {
+    margin-top: 10px;
+    justify-content: center;
+}
+
+/* targets the caluclate button */
+button {
+    height: 100%;
+    padding: 6px 12px; 
+    border-radius: 6px;
+    background-color: #293E61;
+    color: #fffdde;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    border: none;
+
+    /* tranisitions the bg color with the hover state */
+    transition: background-color 0.2s;
+
+    /* sets a box shadow on the button */
+    box-shadow: 2px 2px 2px #242424;
+}
+
+/* targets the hover state of the button */
+button:hover {
+    color: #fffccc;
+    background-color: #395585; /* Changes background color on hover */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* targets the active state of the button (when pressed) */
+button:active {
+    /* together these effects make button seem like it is pressed */
+
+    /* removes box shadow */
+    box-shadow: none;
+
+    /* transforms y axis 2px down */
+    transform: translateY(2px);
+
+    /* transforms y axis 2px right */
+    transform: translateX(2px);
+}
+
+/* targets the total cost message */
+#total {
+    font-weight: 500;
+    color: #293E61;
+    padding: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* targets the footer */
+footer {
+    font-size: 15px;
+    padding: 12px;
+    color: #ffddaa;
+}
