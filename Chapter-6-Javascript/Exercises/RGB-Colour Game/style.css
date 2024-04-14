@@ -77,8 +77,9 @@ h1 {
 
 /* targets the final score and game over message */
 #message {
-    font-size: 18px;
-    margin-bottom: 4px;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 /* targets the scoreboard div (container for score and lives) */
@@ -87,18 +88,22 @@ h1 {
     justify-content: space-around;
 }
 
+.hidden {
+    display: none;
+}
+
 /* targets the score and lives */
 #score,
 #lives {
     font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: 600;
+    margin-bottom: 12px;
+    font-weight: 500;
 }
 
 /* targets the restart game button */
 #resetButton {
     padding: 12px 20px;
-    margin-bottom: 6px;
+    margin-bottom: 1em;
     font-family: "Nanum Gothic Coding", monospace;
     font-weight: 600;
     font-size: 16px;
