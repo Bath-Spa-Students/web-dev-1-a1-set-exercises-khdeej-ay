@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+
+    <!-- adapts screen to different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Alan Patridge Soundboard [Further Extension] -->
+    <title>Alan Patridge Soundboard</title> 
+
+    <!-- Loads fonts faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Link to external stylesheet -->
+    <link rel = "stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+
+    <!-- Main Content of the page -->
+    <main>
+
+        <!-- flex container that holds audios grids and text to speech areas -->
+        <div id="tts" class="flex-container">
+
+            <!-- text to speech container -->
+            <div class="text-to-speech">
+
+                <!-- text to speech heading -->
+                <div class="tts-heading">
+                    <h2>Text to Speech</h2>
+                </div>
+
+                <!-- textarea for text input to convert to speech -->
+                <div>
+                    <textarea id="text-to-speech" placeholder="Enter text here"></textarea>
+                </div>
+            
+                <!-- button to convert text (in textarea) to speech -->
+                <div class="speak-button">
+                    <button id="tts-button" type="button" onclick="textToSpeech()">Speak</button>
+                </div>
+                
+                <!-- small note on usage of text to speech area -->
+                <div>
+                    <small>
+                        <b>NOTE:</b> Enter text and click on the speech button.
+                    </small>
+                </div>
+            </div>
+        </div>
+        
+        <div id="banks" class="flex-container">
+                
+            <!-- First sample bank of audios -->
+            <div id="bank1" class="soundboard">
+
+                <div class="header">
+                        
+                    <!-- heading for bank 1 -->
+                    <div class="title">
+                        <h2>Sample Bank 1</h2>
+                    </div>
+
+                    <!-- right arrow -->
+                    <div class="arrows">
+                        <a class="next" href="#bank2" title="Next">&rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Grid container - contains all audios -->
+                <div class="sample-bank">
+
+                    <!-- First Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="aha()">
+                            <!-- audio index -->
+                            <p class='index'>01.</p>
+                            <!-- audio source -->
+                            <audio src="../Audio Sampler/Audio/ah-ha.mp3" id="ah-ha" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Ah-ha</p>
+                            <!-- audio duration-->
+                            <p class="duration">1.04</p>
+                        </button>
+                    </div>
+
+                    <!-- Second Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="backOfTheNet()">
+                            <!-- audio index -->
+                            <p class="index">02.</p>
+                            <!-- audio source -->
+                            <audio src="../Audio Sampler/Audio/back-of-the-net.mp3" id="back-of-the-net" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Back Of The Net</p>
+                            <!-- audio duration-->
+                            <p class="duration">1.02</p>
+                        </button>                
+                    </div>
+
+                    <!-- Third Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="bangOutOfOrder()">
+                            <!-- audio index -->
+                            <p class="index">03.</p>
+                            <!-- audio source -->
+                            <audio src="../Audio Sampler/Audio/bangoutoforder.mp3" id="bang-out-of-order" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Bang Out Of Order</p>
+                            <!-- audio duration-->
+                            <p class="duration">1.38</p>
+                        </button>
+                    </div>  
+
+                    <!-- Fourth Audio | Self-inserted (not provided) -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="beep()">
+                            <!-- audio index -->
+                            <p class="index">04.</p>
+                            <!-- audio source -->
+                            <audio src="../Audio Sampler/Audio/beep.mp3" id="beep" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Beep</p>
+                            <!-- audio duration-->
+                            <p class="duration">0.10</p>
+                        </button>
+                    </div>
+
+                    <!-- Fifth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="dan()">
+                            <!-- audio index -->
+                            <p class="index">05.</p>
+                            <!-- audio source -->
+                            <audio src="../Audio Sampler/Audio/dan.mp3" id="dan" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Dan</p>
+                            <!-- audio duration-->
+                            <p class="duration">0.50</p>
+                        </button>
+                    </div>
+
+                    <!-- Sixth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="emailOfTheEvening()">
+                            <!-- audio index -->
+                            <p class="index">06.</p>
+                            <!-- audio source -->
+                            <audio src="../Audio Sampler/Audio/emailoftheevening.mp3" id="email-of-the-evening" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Email Of The Evening</p>
+                            <!-- audio duration-->
+                            <p class="duration">1.49</p>
+                        </button>
+                    </div>
+
+                    <!-- Seventh Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="helloPatridge()">
+                            <!-- audio index -->
+                            <p class="index">07.</p>
+                            <!-- audio source -->
+                            <audio src="../Audio Sampler/Audio/hellopartridge.mp3" id="hello-patridge" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Hello Patridge</p>
+                            <!-- audio duration-->
+                            <p class="duration">2.25</p>
+                        </button>
+                    </div>
+
+                    <!-- Eighth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="iAteAScotchEgg()">
+                            <!-- audio index -->
+                            <p class="index">08.</p>
+                            <!-- audio source -->
+                            <audio src="../Audio Sampler/Audio/iateascotchegg.mp3" id="i-ate-a-scotch-egg" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">I Ate A Scotch Egg</p>
+                            <!-- audio duration-->
+                            <p class="duration">1.91</p>
+                        </button>
+                    </div>
+
+                    <!-- Ninth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="imConfused()">                            
+                            <!-- audio index -->
+                            <p class="index">09.</p>
+                            <!-- audio source -->
+                            <audio src="../Audio Sampler/Audio/imconfused.mp3" id="im-confused" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">I'm Confused</p>
+                            <!-- audio duration-->
+                            <p class="duration">1.07</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second sample bank of audios -->
+            <div id="bank2" class="soundboard">
+                <div class="header">
+                        
+                    <!-- left arrow -->
+                    <div class="arrows">
+                        <a class="previous" href="#bank1" title="Previous">&larr;</a>
+                    </div>
+                        
+                    <!-- heading for bank 2 -->
+                    <div class="title">
+                        <h2>Sample Bank 2</h2>
+                    </div>
+
+                </div>
+
+                <!-- Grid container - contains all audios -->
+                <div class="sample-bank">
+
+                    <!-- Tenth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="boom()">
+                            <!-- audio index -->
+                            <p class='index'>10.</p>
+                            <!-- audio source -->
+                            <audio src="media/boom.mp3" id="cardinal" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Boom</p>
+                            <!-- audio duration-->
+                            <p class="duration">5.06</p>
+                        </button>
+                    </div>
+
+                    <!-- Eleventh Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="cardinal()">
+                            <!-- audio index -->
+                            <p class="index">11.</p>
+                            <!-- audio source -->
+                            <audio src="media/cardinal.mp3" id="cardinal" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Cardinal</p>
+                            <!-- audio duration-->
+                            <p class="duration">4.01</p>
+                        </button>   
+                    </div>
+
+                    <!-- Twelfth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="guitarRiff()">
+                            <!-- audio index -->
+                            <p class="index">12.</p>
+                            <!-- audio source -->
+                            <audio src="media/guitar-riff.mp3" id="guitarRiff" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Guitar Riff</p>
+                            <!-- audio duration-->
+                            <p class="duration">5.06</p>
+                        </button> 
+                    </div>
+
+                    <!-- Thirteenth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="mouseClick()">
+                            <!-- audio index -->
+                            <p class="index">13.</p>
+                            <!-- audio source -->
+                            <audio src="media/mouse-click
+                            .mp3" id="mouseClick" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Mouse Click</p>
+                            <!-- audio duration-->
+                            <p class="duration">5.12</p>
+                        </button> 
+                    </div>
+
+                    <!-- Fourteenth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="notification()">
+                            <!-- audio index -->
+                            <p class="index">14.</p>
+                            <!-- audio source -->
+                            <audio src="media/notification.mp3" id="notification" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Notification</p>
+                            <!-- audio duration-->
+                            <p class="duration">1.09</p>
+                        </button> 
+                    </div>
+
+                    <!-- Fifteenth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="pop()">
+                            <!-- audio index -->
+                            <p class="index">15.</p>
+                            <!-- audio source -->
+                            <audio src="media/pop.mp3" id="pop" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Pop</p>
+                            <!-- audio duration-->
+                            <p class="duration">1.03</p>
+                        </button> 
+                    </div>
+
+                    <!-- Sixteenth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="trap()">
+                            <!-- audio index -->
+                            <p class="index">16.</p>
+                            <!-- audio source -->
+                            <audio src="media/trap.mp3" id="" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Trap</p>
+                            <!-- audio duration-->
+                            <p class="duration">1.14</p>
+                        </button> 
+                    </div>
+
+                    <!-- Seventeenth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="whoosh()">
+                            <!-- audio index -->
+                            <p class="index">17.</p>
+                            <!-- audio source -->
+                            <audio src="media/trap.mp3" id="" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Whoosh</p>
+                            <!-- audio duration-->
+                            <p class="duration">3.6s</p>
+                        </button> 
+                    </div>
+
+                    <!-- Eighteenth Audio -->
+                    <div>
+                        <!-- button - executes when clicked -->
+                        <button onclick="wow()">
+                            <!-- audio index -->
+                            <p class="index">18.</p>
+                            <!-- audio source -->
+                            <audio src="media/wow.mp3" id="" controls></audio>
+                            <!-- name of the audio -->
+                            <p class="name">Wow</p>
+                            <!-- audio duration-->
+                            <p class="duration">Wow</p>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link to external javasript file -->
+    <script src="index.js"></script> 
+
+</body>
+</html>
