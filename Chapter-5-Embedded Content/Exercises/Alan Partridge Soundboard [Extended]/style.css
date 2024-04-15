@@ -1,0 +1,270 @@
+/* STYLESHEET FOR THE SOUNDBOARD */
+
+* {    /* applies to everything */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* targets all tags in the body tag */
+body {    
+    font-family: "Reddit Mono", monospace;
+
+    /* sets a fixed height and prevents scrolling */
+    height: 100vh;
+    overflow: hidden;
+    
+    /* background color */
+    background-color: #FBAB7E;
+
+    /* background gradient */
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    
+    color: #242424;
+}
+
+/* targets the main content */
+main {
+
+    /* sets dsplay to flex (adjustable according to screen size) */
+    display: flex;
+
+    /* adjusts space along main axis */
+    justify-content: center;
+
+    margin: 0.75em 5em;
+}
+
+/* targets the common h2 headings */
+h2 {
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+}
+
+/* targets the main flex container (holding text to speech area and the audio sample banks) */
+.flex-container {
+    display: flex;
+}
+
+/* targets the text to speech area */
+#tts {
+    flex: 42%;
+    margin-top: 1.65em;
+    margin-right: 3em;
+}
+
+/* targets the text to speech container */
+.text-to-speech {
+    display: flex;
+    flex-direction: column; 
+}
+
+/* targets each child in the text to speech container */
+.text-to-speech div {
+    margin: 12px 0px;
+}
+
+/* targets the text to speech heading */
+.tts-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    padding: 22px;
+    margin-top: 2.2em;
+    margin-bottom: 1em;
+}
+
+/* targets the textarea element for text input */
+textarea {
+    width: 100%;
+    height: 180px;
+    padding: 16px 20px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    
+    /* prevent textarea from being resizable */
+    resize: none;
+}
+
+/* targets the text to speech button container */
+.speak-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* targets the text to speech button */
+#tts-button {
+    width: 100%;
+    padding: 6px;
+    background-color: #fffee0;
+    color: #242424;
+
+    /* transforms text to uppercase */
+    text-transform: uppercase;
+
+    /* adds spacing between letters */
+    letter-spacing: 1px;
+
+    /* adds an underline to button text */
+    text-decoration: 1px underline #242424;
+
+    /* adds an offset to underline */
+    text-underline-offset: 2.4px;
+    font-family: "Reddit Mono", monospace;
+
+    /* boldens text */
+    font-weight: bold;
+
+    /* removes default border */
+    border: 0px;
+
+    /* chamges cursor to a pointer */
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* targets the banks container - horizontal scroll container */
+#banks {
+    width: 100vw;
+
+    /* sets what shows when content overflows a block-level element's left and right edges */
+    overflow-x: scroll;
+
+    /* prevent unwanted horizontal scrolling and extra whitespace in your project */
+    overflow: hidden; 
+    
+    /* prevent text from wrapping within an element */
+    white-space: nowrap; 
+}
+
+/* targets the sample banks containing the audio buttons */
+.soundboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* targets the header section of the sample banks */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 2.4em 0.25em 1em 0.75em;
+}
+
+/* targets the sample bank title container */
+.title {
+
+    /* grows item to fill container */
+    flex-grow: 1;
+}
+
+/* targets the grid container for the audios */
+.sample-bank {
+
+    /* sets display to grid (with rows and columns) */
+    display: grid;
+
+    /* sets the number of columns and their width */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* sets the distance between the columns */
+    column-gap: 12px;
+    margin-bottom: 10px;
+}
+
+/* targets the divs in the grid container */
+.sample-bank div {
+    width: 20vw;
+    padding: 12px;
+}
+
+/* targets the button styles */
+button {
+    font-size: 15px;
+    background-color: #fffee0;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+
+    /* sets the distance between lines of text */
+    line-height: 2rem;
+    padding: 10px;
+
+    /* sets a slight box shadow */
+    box-shadow: 1px 1px 4px 0 #F7CE68; 
+
+    /* sets a transition for the button */
+    transition: all 0.3s ease-in-out;
+}
+
+/* targets the hover state of the button */
+button:hover {
+
+    /* changes the cursor from default to pointer */
+    cursor: pointer; 
+    color: #ff6400;
+    background-color: #fffd8d;
+
+    /* sets a darker box shadow */
+    box-shadow: 2px 2px 2px 0 #f0efbc; 
+}
+
+/* targets the audio */
+audio {
+    /* removes the controls and player */
+    display: none;
+}
+
+/* targets all the paragraph tags */
+p {
+    font-family: "Reddit Mono", monospace;
+}
+
+/* targets the index of the audio */
+.index {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* targets the audio name */
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* targets the duration of the audio */
+.duration {
+    font-size: 12px;
+}
+
+/* targets the arrow containers */
+.arrows {
+
+    /* works because it is a utf-8 character */
+    font-size: 36px;
+    font-weight: bold;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+/* targets the arrow links */
+.arrows a {
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* targets the hover state of the arrow links */
+.arrows a:hover {
+    color: #242424; 
+}
